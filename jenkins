@@ -1,5 +1,7 @@
 pipeline {
     agent any
+
+    stages {
         stage('Run pipeline.py') {
             steps {
                 sh 'python3 pipeline.py'
