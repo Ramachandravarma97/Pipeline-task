@@ -1,0 +1,9 @@
+pipeline {
+    agent any
+        stage('Run pipeline.py') {
+            steps {
+                sh 'python3 pipeline.py'
+            }
+        }
+    }
+}
