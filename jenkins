@@ -5,6 +5,7 @@ pipeline {
         stage('Run pipeline.py') {
             steps {
                 sh 'python3 pipeline.py'
+                sh 'python3 newfile.py'
             }
         }
     }
